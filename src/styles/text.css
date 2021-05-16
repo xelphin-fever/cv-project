@@ -1,0 +1,20 @@
+
+input{
+  border:none;
+  outline: none;
+  font-size: 25px;
+  background-color: rgba(231, 197, 134, 0.192);
+  color:rgb(207, 167, 92);
+  text-decoration: underline;
+}
+
+textarea{
+  border:none;
+  outline: none;
+  font-size: 25px;
+  background-color: rgba(231, 197, 134, 0.192);
+  color:rgb(207, 167, 92);
+  text-decoration: underline;
+  min-height: 80px;
+  min-width: 95%;
+}

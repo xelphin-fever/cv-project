@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.project-div{
+  background-color: rgb(245, 245, 227);
+  color: rgb(207, 167, 92);
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 50px;
+}
+
+.project-title{
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.cv-div{
+  border: 1px rgb(207, 167, 92) solid;
+  padding: 50px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  TOP */
+.top-cv-div{
+  border: 1px rgb(207, 167, 92) solid;
+  margin: 30px 0;
+  padding: 20px 15px;
+}
+
+/*  MAIN */
+.main-cv-div{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entry-title{
+  font-size: 45px;
+  text-shadow: 3px 3px rgba(216, 199, 164, 0.671);
+}
+button{
+  background-color: rgb(207, 167, 92);
   color: white;
+  border: none;
+  box-shadow: 3px 3px rgb(216, 199, 164);
+  transition: 0.1s all linear
+}
+button:hover{
+  box-shadow: 2px 2px rgb(216, 199, 164);
+  transform: translate(1px, 1px);
+}
+button:active{
+  border: none;
+  outline: none;
+}
+/*  LEFT */
+.left-cv-div{
+  width: 30%;
+}
+.contactBox{
+  margin: 25px 0;
+}
+.contactBox-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px 0;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+/*  RIGHT */
+.right-cv-div{
+  width: 65%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dateHolder{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/*  TOGGLE */
+.toggle{
+  position: absolute;
+  top: 5%;
+  right: 12%;
+  font-size: 25px;
 }
